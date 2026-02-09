@@ -32,7 +32,7 @@ body{
     height:100vh;
     background:
     linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url("https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2");
+    url("cocoo.jpg");
     background-size:cover;
     background-position:center;
 }
@@ -53,6 +53,10 @@ nav{
     font-weight:bold;
 }
 
+nav ul{
+    list-style:none;
+}
+
 nav ul li{
     display:inline-block;
     margin:10px 20px;
@@ -61,6 +65,7 @@ nav ul li{
 nav ul li a{
     color:white;
     text-decoration:none;
+    font-weight:500;
 }
 
 .header-text{
@@ -70,6 +75,7 @@ nav ul li a{
 
 .header-text h1{
     font-size:50px;
+    line-height:1.2;
 }
 
 .header-text span{
@@ -88,7 +94,7 @@ h2{
     margin-bottom:20px;
 }
 
-/* MENU CARDS */
+/* MENU */
 
 .menu-grid{
     display:grid;
@@ -111,13 +117,14 @@ h2{
 
 .offer{
     background:#ffcc00;
-    padding:20px;
-    margin:15px;
+    padding:18px;
+    margin:15px auto;
     border-radius:10px;
     font-weight:bold;
+    max-width:400px;
 }
 
-/* POSTER IMAGE */
+/* POSTER SECTION */
 
 .poster img{
     width:80%;
@@ -147,116 +154,110 @@ footer{
 
 <body>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 
 <div id="header">
-<div class="container">
+    <div class="container">
 
-<nav>
-<div class="logo">COCO 🥥</div>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#offers">Offers</a></li>
-<li><a href="#gallery">Gallery</a></li>
-</ul>
-</nav>
+        <nav>
+            <div class="logo">COCO 🥥</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
 
-<div class="header-text">
-<h1>Fresh Coconut Drinks <br><span>Natural & Healthy</span></h1>
-<p>Cool • Refreshing • Pure</p>
-</div>
+        <div class="header-text">
+            <h1>Fresh Coconut Drinks<br><span>Natural & Healthy</span></h1>
+            <p>Cool • Refreshing • Pure</p>
+        </div>
 
-</div>
+    </div>
 </div>
 
 <!-- ABOUT -->
 
 <section id="about">
-<h2>About COCO 🥥</h2>
-<p>
-COCO is a fresh coconut drinks stall serving natural,
-healthy and refreshing beverages.
-We use real tender coconuts and fresh ingredients
-with zero chemicals.
-Perfect for hydration and summer refreshment.
-</p>
+    <h2>About COCO 🥥</h2>
+    <p>
+        COCO is a fresh coconut drinks stall serving natural, healthy and refreshing beverages.
+        We use real tender coconuts and fresh ingredients with zero chemicals.
+        Perfect for hydration and summer refreshment.
+    </p>
 </section>
 
-<!-- POSTER SECTION -->
+<!-- POSTER -->
 
 <section class="poster">
-<h2>Our Stall Poster 🥥</h2>
-<img src="cocoo.jpg">
+    <h2>Our Stall Poster 🥥</h2>
+    <img src="cocoo.jpg" alt="COCO Stall Poster">
 </section>
 
 <!-- MENU -->
 
 <section id="menu">
-<h2>Our Menu</h2>
+    <h2>Our Menu</h2>
 
-<div class="menu-grid">
+    <div class="menu-grid">
 
-<div class="card">
-<h3>Kobbari Neelu</h3>
-<p>Fresh tender coconut water</p>
-<h4>₹49</h4>
-</div>
+        <div class="card">
+            <h3>Kobbari Neelu</h3>
+            <p>Fresh tender coconut water</p>
+            <h4>₹49</h4>
+        </div>
 
-<div class="card">
-<h3>Coco Refreshers</h3>
-<p>Flavoured coconut drinks</p>
-<h4>₹69</h4>
-</div>
+        <div class="card">
+            <h3>Coco Refreshers</h3>
+            <p>Flavoured coconut drinks</p>
+            <h4>₹69</h4>
+        </div>
 
-<div class="card">
-<h3>Coconut Vanilla Bliss</h3>
-<p>Creamy coconut dessert drink</p>
-<h4>₹129</h4>
-</div>
+        <div class="card">
+            <h3>Coconut Vanilla Bliss</h3>
+            <p>Creamy coconut dessert drink</p>
+            <h4>₹129</h4>
+        </div>
 
-<div class="card">
-<h3>Coco Charge</h3>
-<p>Energy coconut drink</p>
-<h4>₹109</h4>
-</div>
+        <div class="card">
+            <h3>Coco Charge</h3>
+            <p>Energy coconut drink</p>
+            <h4>₹109</h4>
+        </div>
 
-<div class="card">
-<h3>Tender Temptation</h3>
-<p>Premium malai coconut drink</p>
-<h4>₹149</h4>
-</div>
+        <div class="card">
+            <h3>Tender Temptation</h3>
+            <p>Premium malai coconut drink</p>
+            <h4>₹149</h4>
+        </div>
 
-</div>
+    </div>
 </section>
 
 <!-- OFFERS -->
 
 <section id="offers">
-<h2>Today's Offers</h2>
-
-<div class="offer">🔥 Buy 2 Get 1 FREE</div>
-<div class="offer">🥥 Free Malai Add-on</div>
-<div class="offer">⭐ Scan QR for ₹10 OFF</div>
-
+    <h2>Today's Offers</h2>
+    <div class="offer">🔥 Buy 2 Get 1 FREE</div>
+    <div class="offer">🥥 Free Malai Add-on</div>
+    <div class="offer">⭐ Scan QR for ₹10 OFF</div>
 </section>
 
 <!-- GALLERY -->
 
 <section id="gallery">
-<h2>Gallery</h2>
-
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1528825871115-3581a5387919">
-<img src="https://images.unsplash.com/photo-1590086782792-42dd2350140d">
-<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
-</div>
-
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919">
+        <img src="https://images.unsplash.com/photo-1590086782792-42dd2350140d">
+        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+    </div>
 </section>
 
 <footer>
-🥥 COCO Fresh Coconut Bar  
-Natural • Healthy • Refreshing
+    🥥 COCO Fresh Coconut Bar <br>
+    Natural • Healthy • Refreshing
 </footer>
 
 </body>
