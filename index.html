@@ -16,23 +16,20 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
     background:#fffde7;
     color:#333;
+    text-align:center;
 }
 
-/* HERO HEADER */
+/* HERO */
 
 #header{
     width:100%;
     height:100vh;
     background:
     linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url("cocoo.jpg");
+    url("cocoo.jpeg");
     background-size:cover;
     background-position:center;
 }
@@ -59,13 +56,12 @@ nav ul{
 
 nav ul li{
     display:inline-block;
-    margin:10px 20px;
+    margin:10px 15px;
 }
 
 nav ul li a{
     color:white;
     text-decoration:none;
-    font-weight:500;
 }
 
 .header-text{
@@ -75,7 +71,6 @@ nav ul li a{
 
 .header-text h1{
     font-size:50px;
-    line-height:1.2;
 }
 
 .header-text span{
@@ -86,7 +81,6 @@ nav ul li a{
 
 section{
     padding:60px 10%;
-    text-align:center;
 }
 
 h2{
@@ -109,10 +103,6 @@ h2{
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.card h3{
-    color:#2e7d32;
-}
-
 /* OFFERS */
 
 .offer{
@@ -124,7 +114,7 @@ h2{
     max-width:400px;
 }
 
-/* POSTER SECTION */
+/* POSTER IMAGE */
 
 .poster img{
     width:80%;
@@ -133,20 +123,11 @@ h2{
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* GALLERY */
-
-.gallery img{
-    width:250px;
-    border-radius:10px;
-    margin:10px;
-}
-
 /* FOOTER */
 
 footer{
     background:#2e7d32;
     color:white;
-    text-align:center;
     padding:20px;
 }
 </style>
@@ -154,110 +135,72 @@ footer{
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <div id="header">
-    <div class="container">
+<div class="container">
 
-        <nav>
-            <div class="logo">COCO 🥥</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#offers">Offers</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
+<nav>
+<div class="logo">COCO 🥥</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#offers">Offers</a></li>
+</ul>
+</nav>
 
-        <div class="header-text">
-            <h1>Fresh Coconut Drinks<br><span>Natural & Healthy</span></h1>
-            <p>Cool • Refreshing • Pure</p>
-        </div>
+<div class="header-text">
+<h1>Fresh Coconut Drinks<br><span>Natural & Healthy</span></h1>
+<p>Cool • Refreshing • Pure</p>
+</div>
 
-    </div>
+</div>
 </div>
 
 <!-- ABOUT -->
 
 <section id="about">
-    <h2>About COCO 🥥</h2>
-    <p>
-        COCO is a fresh coconut drinks stall serving natural, healthy and refreshing beverages.
-        We use real tender coconuts and fresh ingredients with zero chemicals.
-        Perfect for hydration and summer refreshment.
-    </p>
+<h2>About COCO 🥥</h2>
+<p>
+COCO serves fresh, natural and healthy coconut drinks.
+Made from real tender coconuts with zero chemicals.
+Perfect for hydration and cooling refreshment.
+</p>
 </section>
 
-<!-- POSTER -->
+<!-- YOUR POSTER -->
 
 <section class="poster">
-    <h2>Our Stall Poster 🥥</h2>
-    <img src="cocoo.jpg" alt="COCO Stall Poster">
+<h2>Our Stall Poster 🥥</h2>
+<img src="cocoo.jpeg">
 </section>
 
 <!-- MENU -->
 
 <section id="menu">
-    <h2>Our Menu</h2>
+<h2>Our Menu</h2>
 
-    <div class="menu-grid">
-
-        <div class="card">
-            <h3>Kobbari Neelu</h3>
-            <p>Fresh tender coconut water</p>
-            <h4>₹49</h4>
-        </div>
-
-        <div class="card">
-            <h3>Coco Refreshers</h3>
-            <p>Flavoured coconut drinks</p>
-            <h4>₹69</h4>
-        </div>
-
-        <div class="card">
-            <h3>Coconut Vanilla Bliss</h3>
-            <p>Creamy coconut dessert drink</p>
-            <h4>₹129</h4>
-        </div>
-
-        <div class="card">
-            <h3>Coco Charge</h3>
-            <p>Energy coconut drink</p>
-            <h4>₹109</h4>
-        </div>
-
-        <div class="card">
-            <h3>Tender Temptation</h3>
-            <p>Premium malai coconut drink</p>
-            <h4>₹149</h4>
-        </div>
-
-    </div>
+<div class="menu-grid">
+<div class="card">Kobbari Neelu — ₹49</div>
+<div class="card">Coco Refreshers — ₹69</div>
+<div class="card">Coconut Vanilla Bliss — ₹129</div>
+<div class="card">Coco Charge — ₹109</div>
+<div class="card">Tender Temptation — ₹149</div>
+</div>
 </section>
 
 <!-- OFFERS -->
 
 <section id="offers">
-    <h2>Today's Offers</h2>
-    <div class="offer">🔥 Buy 2 Get 1 FREE</div>
-    <div class="offer">🥥 Free Malai Add-on</div>
-    <div class="offer">⭐ Scan QR for ₹10 OFF</div>
-</section>
-
-<!-- GALLERY -->
-
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919">
-        <img src="https://images.unsplash.com/photo-1590086782792-42dd2350140d">
-        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
-    </div>
+<h2>Today's Offers</h2>
+<div class="offer">Buy 2 Get 1 FREE</div>
+<div class="offer">Free Malai Add-on</div>
+<div class="offer">Scan QR for ₹10 OFF</div>
 </section>
 
 <footer>
-    🥥 COCO Fresh Coconut Bar <br>
-    Natural • Healthy • Refreshing
+🥥 COCO Fresh Coconut Bar  
+Natural • Healthy • Refreshing
 </footer>
 
 </body>
